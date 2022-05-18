@@ -1,0 +1,20 @@
+{{#if products.length}}
+<div class="table-responsive">
+    <table class="table align-middle">
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Foto</th>
+        </tr>
+        <tbody>
+            {{#each products}}
+            <tr>
+                <th class="col-5">{{this.title}}</th>
+                <th class="col-4">$ {{this.price}}</th>
+                <th class="col"><img src="{{this.thumbnail}}" alt="{{this.title}} Foto"></th>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+{{/if}}

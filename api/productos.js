@@ -1,0 +1,2 @@
+products = [{"title":"7Up","price":400,"thumbnail":"https://drinke.com.ar/wp-content/uploads/2020/12/7up-1500cc.jpg"},{"title":"Manaos","price":350,"thumbnail":"https://www.madacilo.com.ar/7160-thickbox_default/gaseosa-manaos-cola-6x2250cc.jpg"},{"title":"Fanta","price":500,"thumbnail":"https://jumboargentina.vtexassets.com/arquivos/ids/614441-800-600?v=637409202162700000&width=800&height=600&aspect=true"}]
+module.exports = products;
