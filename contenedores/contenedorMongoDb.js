@@ -37,6 +37,19 @@ class ContenedorMongoDb {
         return productos;
     }
 
+    async getAllM() {
+        console.log("Base de datos conectada");
+        await mongoose.connect(URL, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        })
+        // FIND
+        console.log("READ ALL");
+        let mensajes = await this.model.find({});
+        console.log(mensajes);
+        return mensajes;
+    }
+
     async save(elem) {
         // INSERT 
         console.log("INSERT");
