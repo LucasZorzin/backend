@@ -35,9 +35,9 @@ const ContenedorFirebase = require("../contenedores/contenedorFirebase");
 //! Mensajes SQLITE3:
 // const messagesApi = new ContenedorSQL(config.sqlite3, "mensajes");
 //!Mensajes MongoDB:
-// const messagesApi = new ContenedorMongoDb(config.mongooseMensajes,"mensajes");
+const messagesApi = new ContenedorMongoDb(config.mongooseMensajes,"mensajes");
 //! Productos Firebase:
-const messagesApi = new ContenedorFirebase(config.firebase,"mensajes");
+// const messagesApi = new ContenedorFirebase(config.firebase,"mensajes");
 
 
 //! Productos MariaDB:
