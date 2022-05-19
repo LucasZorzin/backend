@@ -32,6 +32,10 @@ class ContenedorSQL {
         return this.knex.from(this.tabla).select('*');
     }
 
+    async getAllM() {
+        return this.knex.from(this.tabla).select('*');
+    }
+
     async save(elem) {
         return this.knex(this.tabla).insert(elem);
     }

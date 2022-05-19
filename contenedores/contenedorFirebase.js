@@ -28,6 +28,16 @@ class ContenedorFirebase {
         }));
         return response;
     }
+    async getAllM() {
+        const querySnapshot = await this.query.get();
+        let docs = querySnapshot.docs;
+        const response = docs.map((doc) => ({
+            author: doc.data().author,
+            text: doc.data().text,
+            date: doc.data().date
+        }));
+        return response;
+    }
 
     async save(elem) {
         let doc = this.query.doc()
